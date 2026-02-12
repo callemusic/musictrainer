@@ -1,0 +1,34 @@
+
+export enum MusicalPeriod {
+  MEDIEVAL = 'Medieval',
+  RENAISSANCE = 'Renaissance',
+  BAROQUE = 'Baroque',
+  CLASSICAL = 'Classical',
+  ROMANTIC = 'Romantic',
+  MODERN = 'Modern/Impressionist'
+}
+
+export interface MusicPiece {
+  id: string;
+  title: string;
+  composer: string;
+  year: number;
+  period: MusicalPeriod;
+  description: string;
+  fileName: string;
+  audioUrl: string; // Pre-defined URL for default access
+}
+
+export interface UserFile {
+  file: File;
+  url: string;
+  matchedId?: string;
+}
+
+export interface QuizState {
+  currentPieceId: string | null;
+  isPlaying: boolean;
+  score: number;
+  totalAnswered: number;
+  feedback: 'correct' | 'wrong' | null;
+}
