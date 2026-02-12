@@ -134,11 +134,11 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
   },
   {
     id: 'wienklassicism',
-    title: 'Wienklassicism Representative',
-    composer: 'Viennese Masters',
+    title: 'Pukslaget',
+    composer: 'Joseph Haydn',
     year: 1780,
     period: MusicalPeriod.CLASSICAL,
-    description: 'Musik som representerar höjdpunkten av Wienklassicismen.',
+    description: 'Symfonin med det berömda överraskande pukslaget, ett av Haydns mest kända verk från Wienklassicismen.',
     fileName: 'wienklassicism.mp3',
     audioUrl: createAudioPath('wienklassicism.mp3')
   },
