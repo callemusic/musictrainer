@@ -109,11 +109,6 @@ export const Timeline: React.FC = () => {
       
       <section className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 md:p-8">
         <h2 className="text-3xl font-bold text-indigo-900 mb-4">Studiehandledning</h2>
-        <p className="text-indigo-800 leading-relaxed max-w-3xl">
-          Utforska den västerländska musikens utveckling. Spåren strömmas från <strong>Firebase Storage</strong>.
-          Om ett spår inte fungerar, kontrollera att din Firebase-bucket tillåter <strong>publik läsåtkomst</strong>.
-          Du kan också ladda upp filer manuellt för att spara dem lokalt.
-        </p>
         <div className="mt-8 flex flex-wrap gap-2">
           {periods.map(period => (
             <span 
