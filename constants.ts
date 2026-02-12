@@ -28,8 +28,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 800,
     period: MusicalPeriod.MEDIEVAL,
     description: 'The foundation of Western music: sacred, monophonic, unaccompanied vocal music of the Roman Catholic Church.',
-    fileName: 'Nr 001  Gregoriansk sång (medelid).mp3',
-    audioUrl: createAudioPath('Nr 001  Gregoriansk sång (medelid).mp3')
+    fileName: 'Nr 001 Gregoriansk sa\u030ang (medeltid).mp3',
+    audioUrl: createAudioPath('Nr 001 Gregoriansk sa\u030ang (medeltid).mp3')
   },
   {
     id: 'medieval-secular',
@@ -38,8 +38,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1300,
     period: MusicalPeriod.MEDIEVAL,
     description: 'Secular dance music of the Middle Ages, often featuring rhythmic vitality and early folk instruments.',
-    fileName: 'Nr 002  Medeltida profan musik (Strada Bransle).mp3',
-    audioUrl: createAudioPath('Nr 002  Medeltida profan musik (Strada Bransle).mp3')
+    fileName: 'Nr 002 Medeltida profan musik (Strada Bransle).mp3',
+    audioUrl: createAudioPath('Nr 002 Medeltida profan musik (Strada Bransle).mp3')
   },
   {
     id: 'bach-toccata',
@@ -58,8 +58,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1723,
     period: MusicalPeriod.BAROQUE,
     description: 'A masterpiece of programmatic music, depicting the arrival of spring through vivid violin techniques.',
-    fileName: 'Nr 005  Våren (ur De fyra årstiderna).mp3',
-    audioUrl: createAudioPath('Nr 005  Våren (ur De fyra årstiderna).mp3')
+    fileName: 'Nr 005 Va\u030aren (ur De fyra a\u030arstiderna).mp3',
+    audioUrl: createAudioPath('Nr 005 Va\u030aren (ur De fyra a\u030arstiderna).mp3')
   },
   {
     id: 'handel-hallelujah',
@@ -68,8 +68,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1741,
     period: MusicalPeriod.BAROQUE,
     description: 'The triumphant pinnacle of the Baroque oratorio, celebrating spiritual victory.',
-    fileName: 'Nr 006  Halleluja (ur Messias).mp3',
-    audioUrl: createAudioPath('Nr 006  Halleluja (ur Messias).mp3')
+    fileName: 'Nr 006 Halleluja (ur Messias).mp3',
+    audioUrl: createAudioPath('Nr 006 Halleluja (ur Messias).mp3')
   },
   {
     id: 'hildegard-hortus',
@@ -78,8 +78,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1175,
     period: MusicalPeriod.MEDIEVAL,
     description: 'Ethereal monophonic chant from one of the most remarkable figures of the Middle Ages.',
-    fileName: 'Hildegard von Bingen - Hortus Deliciarum.mp3',
-    audioUrl: createAudioPath('Hildegard von Bingen - Hortus Deliciarum.mp3')
+    fileName: 'Hildegard von Bingen - Hortus Deliciarum-short.mp3',
+    audioUrl: createAudioPath('Hildegard von Bingen - Hortus Deliciarum-short.mp3')
   },
   {
     id: 'tallis-spem',
@@ -98,8 +98,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1600,
     period: MusicalPeriod.RENAISSANCE,
     description: 'Melancholic and intricate lute songs that defined the late Renaissance aesthetic.',
-    fileName: 'John Dowland - 2 Hours With The Best Lute Classical Music HQ.mp3',
-    audioUrl: createAudioPath('John Dowland - 2 Hours With The Best Lute Classical Music HQ.mp3')
+    fileName: 'John Dowland Lute Classical Music.mp3',
+    audioUrl: createAudioPath('John Dowland Lute Classical Music.mp3')
   },
   {
     id: 'bach-harpsichord',
@@ -158,8 +158,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1896,
     period: MusicalPeriod.ROMANTIC,
     description: 'A flirtatious and sweeping aria showcasing Puccini\'s gift for verismo melody.',
-    fileName: 'Puccini - La Bohème - Musettas Waltz.mp3',
-    audioUrl: createAudioPath('Puccini - La Bohème - Musettas Waltz.mp3')
+    fileName: 'Puccini - La Bohe\u0300me - Musettas Waltz.mp3',
+    audioUrl: createAudioPath('Puccini - La Bohe\u0300me - Musettas Waltz.mp3')
   },
   {
     id: 'peterson-berger',
@@ -168,8 +168,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1896,
     period: MusicalPeriod.ROMANTIC,
     description: 'Swedish national romanticism at its finest, evoking the landscapes of Jämtland.',
-    fileName: 'Wilhelm Peterson-Berger - Frösöblomster.mp3',
-    audioUrl: createAudioPath('Wilhelm Peterson-Berger - Frösöblomster.mp3')
+    fileName: 'Wilhelm Peterson-Berger - Fro\u0308so\u0308blomster.mp3',
+    audioUrl: createAudioPath('Wilhelm Peterson-Berger - Fro\u0308so\u0308blomster.mp3')
   },
   {
     id: 'debussy-clair',
@@ -188,8 +188,8 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     year: 1888,
     period: MusicalPeriod.MODERN,
     description: 'Minimalist and atmospheric, challenging the heavy textures of late Romanticism.',
-    fileName: 'Erik Satie - Gymnopédie No.1.mp3',
-    audioUrl: createAudioPath('Erik Satie - Gymnopédie No.1.mp3')
+    fileName: 'Erik Satie - Gymnope\u0301die No.1.mp3',
+    audioUrl: createAudioPath('Erik Satie - Gymnope\u0301die No.1.mp3')
   },
   {
     id: 'schoenberg-suite',
