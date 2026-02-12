@@ -28,7 +28,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Anonymous',
     year: 800,
     period: MusicalPeriod.MEDIEVAL,
-    description: 'Grunden för västerländsk musik: sakral, monofon, ackompanjemangslös vokalmusik från den romersk-katolska kyrkan.',
+    description: 'Kyrklig sång med bara en melodi (monofoni) och utan instrument. Detta var grunden för all västerländsk musik.',
     fileName: 'Nr 001 Gregoriansk sa\u030ang (medeltid).mp3',
     audioUrl: createAudioPath('Nr 001 Gregoriansk sa\u030ang (medeltid).mp3')
   },
@@ -38,7 +38,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Anonymous',
     year: 1300,
     period: MusicalPeriod.MEDIEVAL,
-    description: 'Profan dansmusik från medeltiden, ofta med rytmisk vitalitet och tidiga folkinstrument.',
+    description: 'Världslig (icke-kyrklig) dansmusik från medeltiden med livfull rytm och enkla folkinstrument.',
     fileName: 'Nr 002 Medeltida profan musik (Strada Bransle).mp3',
     audioUrl: createAudioPath('Nr 002 Medeltida profan musik (Strada Bransle).mp3')
   },
@@ -48,7 +48,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'J. S. Bach',
     year: 1704,
     period: MusicalPeriod.BAROQUE,
-    description: 'Ett av historiens mest kända orgelverk, känt för sin dramatik och kontrapunkt.',
+    description: 'Ett av historiens mest kända orgelverk. Kontrapunkt betyder att flera melodier spelas samtidigt och flätas samman.',
     fileName: 'Nr 003  Toccata och fuga i D-moll.mp3',
     audioUrl: createAudioPath('Nr 003  Toccata och fuga i D-moll.mp3')
   },
@@ -58,7 +58,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Antonio Vivaldi',
     year: 1723,
     period: MusicalPeriod.BAROQUE,
-    description: 'Ett mästerverk inom programmusiken som skildrar vårens ankomst genom livfulla violintekniker.',
+    description: 'Programmusik = musik som berättar en historia. Här målar Vivaldi upp vårens ankomst med livfulla violiner.',
     fileName: 'Nr 005 Va\u030aren (ur De fyra a\u030arstiderna).mp3',
     audioUrl: createAudioPath('Nr 005 Va\u030aren (ur De fyra a\u030arstiderna).mp3')
   },
@@ -68,7 +68,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'George Frideric Handel',
     year: 1741,
     period: MusicalPeriod.BAROQUE,
-    description: 'Det triumfatoriska höjdpunkten i barockoratoriet, en hyllning till andlig seger.',
+    description: 'Den mäktiga höjdpunkten i ett oratorium (= stort musikverk för kör och orkester med religiöst tema).',
     fileName: 'Nr 006 Halleluja (ur Messias).mp3',
     audioUrl: createAudioPath('Nr 006 Halleluja (ur Messias).mp3')
   },
@@ -78,7 +78,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Hildegard von Bingen',
     year: 1175,
     period: MusicalPeriod.MEDIEVAL,
-    description: 'Eterisk monofon sång från en av medeltidens mest anmärkningsvärda gestalter.',
+    description: 'Drömskt vacker ensam sångmelodi (monofoni) av en av medeltidens mest fascinerande personer — nun, författare och kompositör.',
     fileName: 'Hildegard von Bingen - Hortus Deliciarum-short.mp3',
     audioUrl: createAudioPath('Hildegard von Bingen - Hortus Deliciarum-short.mp3')
   },
@@ -88,7 +88,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Thomas Tallis',
     year: 1570,
     period: MusicalPeriod.RENAISSANCE,
-    description: 'En monumental 40-stämmig renässansmotet som visar höjdpunkten av engelsk polyfoni.',
+    description: 'En enorm motet (= kyrkligt körstycke) för 40 röster! Polyfoni betyder att alla stämmor har egna melodier samtidigt.',
     fileName: 'Spem In Alium (Thomas Tallis) - Tallis Scholars.mp3',
     audioUrl: createAudioPath('Spem In Alium (Thomas Tallis) - Tallis Scholars.mp3')
   },
@@ -98,7 +98,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'John Dowland',
     year: 1600,
     period: MusicalPeriod.RENAISSANCE,
-    description: 'Melankoliska och intrikata lutsånger som definierade senrenässansens estetik.',
+    description: 'Vemodiga och detaljrika sånger med luta (= gitarrliknande stränginstrument). Typiskt för den sena renässansen.',
     fileName: 'John Dowland Lute Classical Music.mp3',
     audioUrl: createAudioPath('John Dowland Lute Classical Music.mp3')
   },
@@ -108,7 +108,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'J. S. Bach',
     year: 1738,
     period: MusicalPeriod.BAROQUE,
-    description: 'Virtuost klaverskrivande som hjälpte cembalon att bli ett soloinstrument.',
+    description: 'Tekniskt imponerande musik för cembalo (= tangentinstrument som knäpper strängarna istället för att slå på dem som ett piano).',
     fileName: 'J. S. Bach - Harpsichord Concertos.mp3',
     audioUrl: createAudioPath('J. S. Bach - Harpsichord Concertos.mp3')
   },
@@ -118,7 +118,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Wolfgang Amadeus Mozart',
     year: 1787,
     period: MusicalPeriod.CLASSICAL,
-    description: 'Ett typexempel på den klassiska stilen: balanserad, elegant och perfekt strukturerad.',
+    description: 'Klassisk musik i sitt tydligaste: snyggt balanserad, elegant och med tydlig struktur. En av Mozarts mest kända melodier.',
     fileName: 'Eine Kleine Nachtmusik - Mozart.mp3',
     audioUrl: createAudioPath('Eine Kleine Nachtmusik - Mozart.mp3')
   },
@@ -128,7 +128,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Ludwig van Beethoven',
     year: 1800,
     period: MusicalPeriod.CLASSICAL,
-    description: 'Beethovens symfoniska debut, en hyllning till Haydn och Mozart med en antydan om hans framtida revolutionära anda.',
+    description: 'Beethovens första symfoni. Han följer Haydn och Mozarts stil men visar redan tecken på sin egen kraftfulla och nytänkande stil.',
     fileName: 'Beethoven Symphony No. 1 in C Major, Op. 21 III. Menuetto. Allegro molto e vivace.mp3',
     audioUrl: createAudioPath('Beethoven Symphony No. 1 in C Major, Op. 21 III. Menuetto. Allegro molto e vivace.mp3')
   },
@@ -138,7 +138,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Joseph Haydn',
     year: 1780,
     period: MusicalPeriod.CLASSICAL,
-    description: 'Symfonin med det berömda överraskande pukslaget, ett av Haydns mest kända verk från Wienklassicismen.',
+    description: 'Symfonin där ett plötsligt högt pukslag (= slag på en stor trumma) mitt i en lugn del skulle väcka sovande publik!',
     fileName: 'wienklassicism.mp3',
     audioUrl: createAudioPath('wienklassicism.mp3')
   },
@@ -148,7 +148,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Pyotr Ilyich Tchaikovsky',
     year: 1875,
     period: MusicalPeriod.ROMANTIC,
-    description: 'Mycket emotionell och lyrisk balettmusik som definierar senromantiken.',
+    description: 'Känslosam och melodisk balettmusik. Romantiken handlade om starka känslor, dramatik och fantasi.',
     fileName: 'Swan Lake - Tchaikovsky.mp3',
     audioUrl: createAudioPath('Swan Lake - Tchaikovsky.mp3')
   },
@@ -158,7 +158,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Giacomo Puccini',
     year: 1896,
     period: MusicalPeriod.ROMANTIC,
-    description: 'En flirtig och svepande aria som visar Puccinis begåvning för verismens melodik.',
+    description: 'En charmig och svepande aria (= solosång i en opera). Verism = operastil som skildrar vardagliga människors liv och känslor.',
     fileName: 'Puccini - La Bohe\u0300me - Musettas Waltz.mp3',
     audioUrl: createAudioPath('Puccini - La Bohe\u0300me - Musettas Waltz.mp3')
   },
@@ -168,7 +168,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Wilhelm Peterson-Berger',
     year: 1896,
     period: MusicalPeriod.ROMANTIC,
-    description: 'Svensk nationalromantik när den är som bäst, med Jämtlands landskap som inspiration.',
+    description: 'Svensk nationalromantik — musik inspirerad av den svenska naturen, här Jämtlands landskap. Stämningsfullt och vackert.',
     fileName: 'Wilhelm Peterson-Berger - Fro\u0308so\u0308blomster.mp3',
     audioUrl: createAudioPath('Wilhelm Peterson-Berger - Fro\u0308so\u0308blomster.mp3')
   },
@@ -178,7 +178,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Claude Debussy',
     year: 1905,
     period: MusicalPeriod.IMPRESSIONIST,
-    description: 'Det definitiva impressionistiska pianoverket, där klangfärg och stämning prioriteras framför traditionell harmoni.',
+    description: 'Det mest kända impressionistiska pianostycket. Impressionism i musik = fokus på stämning och klangfärg, som ett "måleri i ljud".',
     fileName: 'CLAUDE DEBUSSY  CLAIR DE LUNE.mp3',
     audioUrl: createAudioPath('CLAUDE DEBUSSY  CLAIR DE LUNE.mp3')
   },
@@ -188,7 +188,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Erik Satie',
     year: 1888,
     period: MusicalPeriod.IMPRESSIONIST,
-    description: 'Minimalistiskt och atmosfäriskt, en utmaning mot senromantikens tunga texturer.',
+    description: 'Avskalat och drömskt — en reaktion mot romantikens tunga och stora orkesterljud. Få toner, mycket känsla.',
     fileName: 'Erik Satie - Gymnope\u0301die No.1.mp3',
     audioUrl: createAudioPath('Erik Satie - Gymnope\u0301die No.1.mp3')
   },
@@ -198,7 +198,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Arnold Schoenberg',
     year: 1921,
     period: MusicalPeriod.EXPRESSIONIST,
-    description: 'En revolutionär tolvtonskomposition som omdefinierade musikalisk organisation.',
+    description: 'Tolvtonsteknik = alla 12 toner i en oktav används lika mycket, ingen ton är "hemma". Låter ovant och spännande!',
     fileName: 'Schoenberg Suite for Piano, Op.25 (Boffard).mp3',
     audioUrl: createAudioPath('Schoenberg Suite for Piano, Op.25 (Boffard).mp3')
   },
@@ -208,7 +208,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     composer: 'Anton Webern',
     year: 1913,
     period: MusicalPeriod.EXPRESSIONIST,
-    description: 'Hyperkondenserad expressionism där varje enskild ton bär intensiv tyngd.',
+    description: 'Extremt korta stycken där varje ton räknas. Expressionism = musik som uttrycker starka, ofta mörka känslor.',
     fileName: 'Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3',
     audioUrl: createAudioPath('Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3')
   }
