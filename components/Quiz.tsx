@@ -18,7 +18,7 @@ export const Quiz: React.FC = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [showUploader, setShowUploader] = useState(false);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [syncStatus, setSyncStatus] = useState<string>('Initializing...');
+  const [syncStatus, setSyncStatus] = useState<string>('Initierar...');
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -33,9 +33,9 @@ export const Quiz: React.FC = () => {
           if (blob) urls[name] = URL.createObjectURL(blob);
         }
         setLocalAudioUrls(urls);
-        setSyncStatus(`Local storage synced: ${names.length} files`);
+        setSyncStatus(`Lokal lagring synkad: ${names.length} filer`);
       } catch (e) {
-        setSyncStatus('Storage error');
+        setSyncStatus('Lagringsfel');
       }
     };
     initStore();
@@ -46,7 +46,7 @@ export const Quiz: React.FC = () => {
     
     const filesArray = Array.from(e.target.files) as File[];
     
-    setSyncStatus('Saving to browser storage...');
+    setSyncStatus('Sparar i webbläsarens lagring...');
     const newUrls: Record<string, string> = { ...localAudioUrls };
     
     for (const file of filesArray) {
@@ -65,7 +65,7 @@ export const Quiz: React.FC = () => {
     
     setLocalAudioUrls(newUrls);
     const count = Object.keys(newUrls).length;
-    setSyncStatus(`Local storage synced: ${count} files`);
+    setSyncStatus(`Lokal lagring synkad: ${count} filer`);
     setShowUploader(false);
   };
 
@@ -100,7 +100,7 @@ export const Quiz: React.FC = () => {
         setIsPlaying(true);
       }).catch(e => {
         console.error("Quiz playback error:", e);
-        setLoadError(`The browser blocked the audio stream. Check if your Firebase bucket is public.`);
+        setLoadError(`Webbläsaren blockerade ljudströmmen. Kontrollera att din Firebase-bucket är publik.`);
         setIsPlaying(false);
       });
     }
@@ -109,7 +109,7 @@ export const Quiz: React.FC = () => {
   const handleAudioError = () => {
     const error = audioRef.current?.error;
     console.error("Quiz audio error:", error?.code, error?.message);
-    setLoadError(`Playback Error: Could not load "${currentQuizPiece?.fileName}" from the cloud.`);
+    setLoadError(`Uppspelningsfel: Kunde inte ladda "${currentQuizPiece?.fileName}" från molnet.`);
     setIsPlaying(false);
   };
 
@@ -142,11 +142,11 @@ export const Quiz: React.FC = () => {
       <div className="flex justify-between items-center bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
         <div className="flex items-center gap-4">
           <div className="text-center bg-indigo-50 px-4 py-2 rounded-xl">
-            <span className="block text-[10px] font-bold text-indigo-400 uppercase">Score</span>
+            <span className="block text-[10px] font-bold text-indigo-400 uppercase">Poäng</span>
             <span className="text-2xl font-black text-indigo-600">{score}</span>
           </div>
           <div className="text-center bg-stone-50 px-4 py-2 rounded-xl">
-            <span className="block text-[10px] font-bold text-stone-400 uppercase">Played</span>
+            <span className="block text-[10px] font-bold text-stone-400 uppercase">Spelade</span>
             <span className="text-2xl font-black text-stone-600">{totalAttempts}</span>
           </div>
         </div>
@@ -155,7 +155,7 @@ export const Quiz: React.FC = () => {
           className="flex items-center gap-2 bg-stone-900 hover:bg-black text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-sm active:scale-95"
         >
           <RotateCcw size={16} />
-          {currentQuizPiece ? 'New Snippet' : 'Start Quiz'}
+          {currentQuizPiece ? 'Nytt stycke' : 'Starta quiz'}
         </button>
       </div>
 
@@ -166,7 +166,7 @@ export const Quiz: React.FC = () => {
               <LayoutDashboard size={40} />
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-2">Quiz Mode Ready</h3>
+          <h3 className="text-2xl font-bold mb-2">Quizläge redo</h3>
           <p className="text-stone-500 mb-8 max-w-sm mx-auto">
             {syncStatus}
           </p>
@@ -175,7 +175,7 @@ export const Quiz: React.FC = () => {
             className="bg-indigo-600 hover:bg-indigo-700 text-white px-12 py-4 rounded-2xl font-black text-lg shadow-xl shadow-indigo-100 transition-all active:scale-95 flex items-center gap-3 mx-auto"
           >
             <Play size={20} fill="currentColor" />
-            START BLIND TEST
+            STARTA LYSSNINGSTEST
           </button>
         </div>
       ) : (
@@ -195,13 +195,13 @@ export const Quiz: React.FC = () => {
               {loadError ? (
                 <div className="bg-rose-50 border border-rose-100 p-6 rounded-2xl text-center max-w-sm">
                    <AlertCircle className="text-rose-500 mx-auto mb-3" size={32} />
-                   <h4 className="text-rose-900 font-bold mb-1">Source Failed</h4>
+                   <h4 className="text-rose-900 font-bold mb-1">Källan misslyckades</h4>
                    <p className="text-rose-700 text-xs leading-relaxed mb-4">{loadError}</p>
                    <button 
                      onClick={startNextRound}
                      className="bg-white border border-rose-200 text-rose-600 px-4 py-2 rounded-lg text-xs font-bold hover:bg-rose-100 transition-colors"
                    >
-                     Skip this piece
+                     Hoppa över
                    </button>
                 </div>
               ) : (
@@ -232,33 +232,33 @@ export const Quiz: React.FC = () => {
               )}
               
               <p className="text-stone-400 text-xs font-medium uppercase tracking-widest">
-                {loadError ? "Connection Refused" : "Listening Test"}
+                {loadError ? "Anslutning nekad" : "Lyssningstest"}
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
              <div className="space-y-2">
-               <label className="text-xs font-bold text-stone-500 uppercase px-2">Musical Period</label>
+               <label className="text-xs font-bold text-stone-500 uppercase px-2">Musikepok</label>
                <select 
                  disabled={isAnswered}
                  value={selectedPeriod || ''}
                  onChange={(e) => setSelectedPeriod(e.target.value)}
                  className="w-full p-4 rounded-2xl border border-stone-200 bg-white focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer hover:border-stone-300 transition-colors"
                >
-                 <option value="" disabled>Select the period...</option>
+                 <option value="" disabled>Välj epok...</option>
                  {periodsList.map(p => <option key={p} value={p}>{p}</option>)}
                </select>
              </div>
              <div className="space-y-2">
-               <label className="text-xs font-bold text-stone-500 uppercase px-2">Composer</label>
+               <label className="text-xs font-bold text-stone-500 uppercase px-2">Kompositör</label>
                <select 
                  disabled={isAnswered}
                  value={selectedComposer || ''}
                  onChange={(e) => setSelectedComposer(e.target.value)}
                  className="w-full p-4 rounded-2xl border border-stone-200 bg-white focus:ring-2 focus:ring-indigo-500 outline-none cursor-pointer hover:border-stone-300 transition-colors"
                >
-                 <option value="" disabled>Select the composer...</option>
+                 <option value="" disabled>Välj kompositör...</option>
                  {composersList.map(c => <option key={c} value={c}>{c}</option>)}
                </select>
              </div>
@@ -273,7 +273,7 @@ export const Quiz: React.FC = () => {
                 : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg active:scale-[0.98]'
             }`}
           >
-            SUBMIT GUESS
+            SVARA
           </button>
 
           {feedback && (
@@ -290,10 +290,10 @@ export const Quiz: React.FC = () => {
                   <h4 className={`text-xl font-bold mb-1 ${
                     feedback === 'correct' ? 'text-green-800' : 'text-rose-800'
                   }`}>
-                    {feedback === 'correct' ? 'Spot on!' : 'Not quite right...'}
+                    {feedback === 'correct' ? 'Helt rätt!' : 'Inte riktigt rätt...'}
                   </h4>
                   <p className="text-stone-600 text-sm mb-4">
-                    It was <strong>{currentQuizPiece.title}</strong> by <strong>{currentQuizPiece.composer}</strong> ({currentQuizPiece.period}).
+                    Det var <strong>{currentQuizPiece.title}</strong> av <strong>{currentQuizPiece.composer}</strong> ({currentQuizPiece.period}).
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className={`${PERIOD_COLORS[currentQuizPiece.period]} text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase`}>

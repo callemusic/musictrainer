@@ -108,11 +108,11 @@ export const Timeline: React.FC = () => {
       />
       
       <section className="bg-indigo-50 border border-indigo-100 rounded-2xl p-6 md:p-8">
-        <h2 className="text-3xl font-bold text-indigo-900 mb-4">Study Guide</h2>
+        <h2 className="text-3xl font-bold text-indigo-900 mb-4">Studiehandledning</h2>
         <p className="text-indigo-800 leading-relaxed max-w-3xl">
-          Explore the evolution of Western music. Tracks stream from <strong>Firebase Storage</strong>. 
-          If a track fails, ensure your Firebase bucket allows <strong>public read access</strong>. 
-          You can also manually upload files to cache them locally.
+          Utforska den västerländska musikens utveckling. Spåren strömmas från <strong>Firebase Storage</strong>.
+          Om ett spår inte fungerar, kontrollera att din Firebase-bucket tillåter <strong>publik läsåtkomst</strong>.
+          Du kan också ladda upp filer manuellt för att spara dem lokalt.
         </p>
         <div className="mt-8 flex flex-wrap gap-2">
           {periods.map(period => (
@@ -158,13 +158,13 @@ export const Timeline: React.FC = () => {
                         </span>
                         {isLocal && (
                           <span className="flex items-center gap-1 text-[10px] text-green-600 font-bold uppercase bg-green-50 px-2 py-0.5 rounded-md border border-green-100">
-                            <CheckCircle size={10} /> Local
+                            <CheckCircle size={10} /> Lokal
                           </span>
                         )}
                       </div>
                       <span className="flex items-center gap-1 text-stone-400 font-mono text-sm">
                         <Calendar size={14} />
-                        {piece.year < 0 ? `${Math.abs(piece.year)} BC` : piece.year}
+                        {piece.year < 0 ? `${Math.abs(piece.year)} f.Kr.` : piece.year}
                       </span>
                     </div>
                     
@@ -182,7 +182,7 @@ export const Timeline: React.FC = () => {
                         </button>
                         
                         {hasFailed && (
-                          <label className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 cursor-pointer transition-colors shadow-sm" title="Upload missing file">
+                          <label className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-indigo-50 text-indigo-600 hover:bg-indigo-100 cursor-pointer transition-colors shadow-sm" title="Ladda upp fil">
                             <Upload size={18} />
                             <input type="file" className="hidden" accept="audio/*" onChange={(e) => handleManualUpload(piece, e)} />
                           </label>
@@ -192,7 +192,7 @@ export const Timeline: React.FC = () => {
 
                     {hasFailed && (
                       <p className="text-[10px] text-rose-500 font-bold uppercase mb-4 leading-tight">
-                        Cloud source error. Check Firebase or upload manually.
+                        Molnkälla misslyckades. Kontrollera Firebase eller ladda upp manuellt.
                       </p>
                     )}
 

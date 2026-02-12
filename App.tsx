@@ -17,8 +17,8 @@ const App: React.FC = () => {
               <BookOpen size={24} />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-stone-800 tracking-tight">Musical Period Explorer</h1>
-              <p className="text-xs text-stone-500 font-medium uppercase tracking-widest">History & Appreciation</p>
+              <h1 className="text-2xl font-bold text-stone-800 tracking-tight">Musikepoker</h1>
+              <p className="text-xs text-stone-500 font-medium uppercase tracking-widest">Musikhistoria</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ const App: React.FC = () => {
               }`}
             >
               <Info size={18} />
-              <span>Timeline</span>
+              <span>Tidslinje</span>
             </button>
             <button
               onClick={() => setActiveTab('quiz')}
@@ -43,7 +43,7 @@ const App: React.FC = () => {
               }`}
             >
               <Gamepad2 size={18} />
-              <span>Listen & Guess</span>
+              <span>Lyssna & Gissa</span>
             </button>
           </nav>
         </div>
@@ -58,9 +58,9 @@ const App: React.FC = () => {
       <footer className="bg-stone-100 border-t border-stone-200 py-8 text-center text-stone-500 text-sm">
         <div className="flex items-center justify-center gap-2 mb-2">
           <Cloud size={14} className="text-indigo-400" />
-          <p>© 2024 Classical Music Study Tool. Connected to Firebase Storage.</p>
+          <p>© 2024 Musikepoker. Ansluten till Firebase Storage.</p>
         </div>
-        <p className="text-[10px] opacity-60">Use the Timeline to cache files locally for offline study.</p>
+        <p className="text-[10px] opacity-60">Använd tidslinjen för att spara filer lokalt för offlinestudier.</p>
       </footer>
     </div>
   );
