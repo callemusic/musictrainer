@@ -1,12 +1,12 @@
 
 export enum MusicalPeriod {
-  MEDIEVAL = 'Medieval',
-  RENAISSANCE = 'Renaissance',
-  BAROQUE = 'Baroque',
-  CLASSICAL = 'Classical',
-  ROMANTIC = 'Romantic',
-  IMPRESSIONIST = 'Impressionist',
-  EXPRESSIONIST = 'Expressionist'
+  MEDIEVAL = 'Medeltiden',
+  RENAISSANCE = 'Renässansen',
+  BAROQUE = 'Barocken',
+  CLASSICAL = 'Wienklassicismen',
+  ROMANTIC = 'Romantiken',
+  IMPRESSIONIST = 'Impressionismen',
+  EXPRESSIONIST = 'Expressionismen'
 }
 
 export interface MusicPiece {
