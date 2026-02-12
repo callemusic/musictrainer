@@ -5,7 +5,8 @@ export enum MusicalPeriod {
   BAROQUE = 'Baroque',
   CLASSICAL = 'Classical',
   ROMANTIC = 'Romantic',
-  MODERN = 'Modern/Impressionist'
+  IMPRESSIONIST = 'Impressionist',
+  EXPRESSIONIST = 'Expressionist'
 }
 
 export interface MusicPiece {

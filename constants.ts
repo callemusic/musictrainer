@@ -7,7 +7,8 @@ export const PERIOD_COLORS: Record<MusicalPeriod, string> = {
   [MusicalPeriod.BAROQUE]: 'bg-indigo-800',
   [MusicalPeriod.CLASSICAL]: 'bg-blue-600',
   [MusicalPeriod.ROMANTIC]: 'bg-rose-700',
-  [MusicalPeriod.MODERN]: 'bg-slate-700',
+  [MusicalPeriod.IMPRESSIONIST]: 'bg-teal-700',
+  [MusicalPeriod.EXPRESSIONIST]: 'bg-slate-700',
 };
 
 /**
@@ -176,7 +177,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Clair de Lune',
     composer: 'Claude Debussy',
     year: 1905,
-    period: MusicalPeriod.MODERN,
+    period: MusicalPeriod.IMPRESSIONIST,
     description: 'The definitive Impressionist piano work, prioritizing color and mood over traditional harmony.',
     fileName: 'CLAUDE DEBUSSY  CLAIR DE LUNE.mp3',
     audioUrl: createAudioPath('CLAUDE DEBUSSY  CLAIR DE LUNE.mp3')
@@ -186,7 +187,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Gymnopédie No.1',
     composer: 'Erik Satie',
     year: 1888,
-    period: MusicalPeriod.MODERN,
+    period: MusicalPeriod.IMPRESSIONIST,
     description: 'Minimalist and atmospheric, challenging the heavy textures of late Romanticism.',
     fileName: 'Erik Satie - Gymnope\u0301die No.1.mp3',
     audioUrl: createAudioPath('Erik Satie - Gymnope\u0301die No.1.mp3')
@@ -196,7 +197,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Suite for Piano, Op.25',
     composer: 'Arnold Schoenberg',
     year: 1921,
-    period: MusicalPeriod.MODERN,
+    period: MusicalPeriod.EXPRESSIONIST,
     description: 'A revolutionary twelve-tone composition that redefined musical organization.',
     fileName: 'Schoenberg Suite for Piano, Op.25 (Boffard).mp3',
     audioUrl: createAudioPath('Schoenberg Suite for Piano, Op.25 (Boffard).mp3')
@@ -206,7 +207,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: '5 Pieces for Orchestra',
     composer: 'Anton Webern',
     year: 1913,
-    period: MusicalPeriod.MODERN,
+    period: MusicalPeriod.EXPRESSIONIST,
     description: 'Hyper-condensed expressionism where every single note carries intense weight.',
     fileName: 'Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3',
     audioUrl: createAudioPath('Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3')
