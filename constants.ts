@@ -211,5 +211,35 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     description: 'Extremt korta stycken där varje ton räknas. Expressionism = musik som uttrycker starka, ofta mörka känslor.',
     fileName: 'Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3',
     audioUrl: createAudioPath('Webern 5 Pieces for Orchestra, Op. posth III. Sehr bewegte Viertel.mp3')
+  },
+  {
+    id: 'propinan-melyor',
+    title: 'Propinan de Melyor',
+    composer: 'Anonymous',
+    year: 1450,
+    period: MusicalPeriod.RENAISSANCE,
+    description: 'Livlig dansmusik från 1400-talets Spanien. En folklig melodi som visar renässansens glädje och energi — långt från kyrkans strikta musik.',
+    fileName: 'Renaissance melodies - Propinan de Melyor XV Century (Anonymus).mp3',
+    audioUrl: createAudioPath('Renaissance melodies - Propinan de Melyor XV Century (Anonymus).mp3')
+  },
+  {
+    id: 'grieg-peer-gynt',
+    title: 'Peer Gynt Suite',
+    composer: 'Edvard Grieg',
+    year: 1875,
+    period: MusicalPeriod.ROMANTIC,
+    description: 'Norsk nationalromantik — dramatisk orkestermusik skriven till Henrik Ibsens teaterpjäs. Innehåller bland annat den berömda "I Dovregubbens hall".',
+    fileName: 'Peer Gynt Suite Edvard Griegs Masterpiece.mp3',
+    audioUrl: createAudioPath('Peer Gynt Suite Edvard Griegs Masterpiece.mp3')
+  },
+  {
+    id: 'schoenberg-wind-quintet',
+    title: 'Wind Quintet, Op. 26',
+    composer: 'Arnold Schoenberg',
+    year: 1924,
+    period: MusicalPeriod.EXPRESSIONIST,
+    description: 'Tolvtonsmusik för blåskvintett (flöjt, oboe, klarinett, fagott och horn). Visar att Schoenbergs revolutionära teknik fungerar även i mindre, intim kammarmusik.',
+    fileName: 'Arnold Schoenberg - Wind Quintet.mp3',
+    audioUrl: createAudioPath('Arnold Schoenberg - Wind Quintet.mp3')
   }
 ];
