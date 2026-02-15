@@ -78,7 +78,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Hortus Deliciarum',
     composer: 'Hildegard von Bingen',
     year: 1175,
-    period: MusicalPeriod.GREGORIAN,
+    period: MusicalPeriod.MEDIEVAL,
     description: 'Drömskt vacker ensam sångmelodi (monofoni) av en av medeltidens mest fascinerande personer — nun, författare och kompositör.',
     fileName: 'Hildegard von Bingen - Hortus Deliciarum-short.mp3',
     audioUrl: createAudioPath('Hildegard von Bingen - Hortus Deliciarum-short.mp3')
