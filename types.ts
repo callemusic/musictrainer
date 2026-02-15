@@ -1,5 +1,6 @@
 
 export enum MusicalPeriod {
+  GREGORIAN = 'Gregoriansk sång',
   MEDIEVAL = 'Medeltiden',
   RENAISSANCE = 'Renässansen',
   BAROQUE = 'Barocken',

@@ -2,6 +2,7 @@
 import { MusicPiece, MusicalPeriod } from './types';
 
 export const PERIOD_COLORS: Record<MusicalPeriod, string> = {
+  [MusicalPeriod.GREGORIAN]: 'bg-yellow-800',
   [MusicalPeriod.MEDIEVAL]: 'bg-amber-900',
   [MusicalPeriod.RENAISSANCE]: 'bg-emerald-800',
   [MusicalPeriod.BAROQUE]: 'bg-indigo-800',
@@ -27,7 +28,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Gregoriansk sång',
     composer: 'Anonymous',
     year: 800,
-    period: MusicalPeriod.MEDIEVAL,
+    period: MusicalPeriod.GREGORIAN,
     description: 'Kyrklig sång med bara en melodi (monofoni) och utan instrument. Detta var grunden för all västerländsk musik.',
     fileName: 'Nr 001 Gregoriansk sa\u030ang (medeltid).mp3',
     audioUrl: createAudioPath('Nr 001 Gregoriansk sa\u030ang (medeltid).mp3')
@@ -77,7 +78,7 @@ export const MUSIC_LIBRARY: MusicPiece[] = [
     title: 'Hortus Deliciarum',
     composer: 'Hildegard von Bingen',
     year: 1175,
-    period: MusicalPeriod.MEDIEVAL,
+    period: MusicalPeriod.GREGORIAN,
     description: 'Drömskt vacker ensam sångmelodi (monofoni) av en av medeltidens mest fascinerande personer — nun, författare och kompositör.',
     fileName: 'Hildegard von Bingen - Hortus Deliciarum-short.mp3',
     audioUrl: createAudioPath('Hildegard von Bingen - Hortus Deliciarum-short.mp3')
